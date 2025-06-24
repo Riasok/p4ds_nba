@@ -2,10 +2,10 @@
 
 Set your OpenAI API key in `.env` or through the Streamlit sidebar. The application supports:
 
-- Multiple OpenAI models (gpt-4o-mini, gpt-3.5-turbo)
+- OpenAI model (gpt-4o-mini)
 - Adjustable temperature and token limits
 - Debug modes for tool calls and agent reasoning
-- 
+  
 ## Tools Available
 
 1. **Caster DB**: Authentic basketball commentary patterns
