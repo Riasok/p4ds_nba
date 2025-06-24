@@ -48,7 +48,7 @@ except ImportError as e:
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-def create_caster_db_tool(db_path: str = "castors.json"):
+def create_caster_db_tool(db_path: str = "data/castors.json"):
     
     def load_caster_db() -> Dict[str, Any]:
         try:
@@ -359,7 +359,7 @@ class NBAAnalysisAgent:
 
 def load_prompts() -> Dict[str, str]:
     try:
-        with open('prompts.yaml', 'r', encoding='utf-8') as f:
+        with open('data/prompts.yaml', 'r', encoding='utf-8') as f:
             return yaml.safe_load(f)
     except FileNotFoundError:
         return {"system_prompt": "You are GPT CourtVision, an expert NBA analyst. Your tools include a caster database for authentic commentary, an NBA database for live stats, and a mock prediction model for demonstrations. Your goal is to provide engaging and insightful analysis."}
