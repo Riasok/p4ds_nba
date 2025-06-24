@@ -1,4 +1,4 @@
-### NBA Predictor Team 1
+## NBA Predictor Team 1
 
 Set your OpenAI API key in `.env` or through the Streamlit sidebar. The application supports:
 
